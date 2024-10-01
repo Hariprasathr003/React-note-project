@@ -1,0 +1,86 @@
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode{
+  background-color: black;
+}
+.dark-mode h1{
+  background-color: aliceblue;
+}
+.note{
+  background-color: #12b0d0;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.addnote{
+  background-color: rgb(188, 220, 245);
+  min-height: 170px;
+  border-radius: 10px;
+}
+textarea{
+  border: none;
+  resize: none;
+  background-color: rgb(190, 220, 230);
+}
+textarea:focus{
+  outline: none;
+}
+.save{
+  background-color: rgb(244, 139, 11);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+.save:hover{
+  background-color: rgb(53, 210, 108);
+  cursor: pointer;
+}
+.notelist{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+}
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.delete-icon{
+  cursor: pointer;
+
+}
+.searchbar{
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+
+}
+
+.searchbar input{
+  border: none;
+  background-color: rgb(226, 255, 6);
+}
+.searchbar input:focus{
+  outline: none;
+}
